@@ -16,7 +16,7 @@ limpiarCampos = () => {
   materia.value = "";
   notasAlumno.value = "";
   alumno.value = "";
-  salida.value = "";
+  salida.textContent = "";
   
 };
 
@@ -105,11 +105,13 @@ document.addEventListener("keydown", (event) => {
     habilitarComponentes()
   }
   if(event.key=="Escape"){
-    
     limpiarCampos()
     deshabilitarComponentes()
   }
-});
+  if(event.key=="F9"){
+    mostrarResultado(notasAlumno.value)
+  }
+})
 
 //EVENTOS BOTONES
 limpiar.addEventListener("click", () => {
