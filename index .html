@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promdio de Notas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Sistema Promedio de Notas</h1>
+      <div class="group-datos">
+        <div class="group">
+          <label for="materia">Materia</label>
+          <input disabled required type="text" id="materia" />
+        </div>
+        <div class="group">
+          <label for="notasxsemestre">Notas</label>
+          <input type="text" disabled  required id="notas" />
+        </div>
+      </div>
+      <div class="group">
+        <label for="alumno">Alumno</label>
+        <input type="text" disabled  required id="alumno" />
+      </div>
+      <div class="group-salida">
+        <label for="salida">Resultados</label>
+        <textarea disabled id="salida" class="salida"></textarea>
+      </div>
+      <div class="group-button">
+          <button id="nuevo">Nuevo</button>
+          <button id="promediar" disabled>Promediar</button>
+          <button id="limpiar" disabled>Limpiar Campos</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
